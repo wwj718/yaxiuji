@@ -88,6 +88,7 @@ section.timeline span.timeline-line {
     z-index:1;
     width:4px;
     height:100%;
+    _height:1700px;
     top:0;
     left:50%;
     margin-left:-2px;
@@ -5900,6 +5901,7 @@ span.nav-icon.search-open {
 }
 span.nav-icon:hover, span.nav-icon.current {
     background:#e8e8e8;
+    _background:#fff;
     cursor:pointer
 }
 span.nav-icon span.icon {
@@ -6355,7 +6357,7 @@ nav.breadcrumbs .breadcrumbs-inner span.separator {
     margin:0 10px
 }
 .no-backgroundsize nav.breadcrumbs .breadcrumbs-inner span.separator {
-    background-image:url('../img/nav-arrow-right-ie.png')
+    background-image:url('../img/nav-arrow-right-ie.gif')
 }
 section.image-slider nav.image-gallery-nav a {
     position:absolute;

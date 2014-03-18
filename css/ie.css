@@ -1554,9 +1554,11 @@ aside.search-area input[type="submit"] {
 /* Timeline */
  section.timeline article.timeline-event {
     clear: both;
+    _width: 1000px;
 }
 section.timeline article.timeline-event .timeline-event-details, section.timeline article.timeline-event figure.timeline-image {
     width: 40%;
+    _width:35%;
 }
 section.timeline article.timeline-event .timeline-event-details {
     margin-top: 0;
@@ -1681,16 +1683,20 @@ section.timeline article.timeline-event figure.timeline-image {
 /* ODD */
  .csstransitions.no-touch section.timeline article.timeline-event.odd .timeline-event-details {
     left: 900px;
+    _left:80px;
 }
 .csstransitions.no-touch section.timeline article.timeline-event.odd figure.timeline-image {
     left: -900px;
+    _left:-120px;
 }
 /* EVEN */
  .csstransitions.no-touch section.timeline article.timeline-event.even .timeline-event-details {
     left: -900px;
+    _left:-80px;
 }
 .csstransitions.no-touch section.timeline article.timeline-event.even figure.timeline-image {
     left: 900px;
+    _left:150px;
 }
 /* animation properties to show */
  .csstransitions.no-touch section.timeline article.timeline-event.show {

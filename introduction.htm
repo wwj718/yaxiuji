@@ -15,6 +15,7 @@
 <body>
     <div class="outer-wrap">
         <div class="page-wrap">
+        <!-- header start -->
             <header role="banner" class="main-head">
                 <div class="nav-img">
                     <img id="logo" alt="雅绣集" src="img/logo_horizon.png">
@@ -43,6 +44,8 @@
                     </div>
                 </nav>
             </header>
+            <!--end header-->
+            <!--小导航start-->
             <nav class="breadcrumbs clearfix">
                 <div class="breadcrumbs-inner">
                     <a title="Home" href="yaxiuji.htm" class="item">首页</a>
@@ -50,14 +53,18 @@
                     <span class="current">公司简介</span>
                 </div>
             </nav>
+            <!--小导航end-->
             <div class="content-wrap about-page clearfix">
+                <!-- 小标题 start -->
                 <section class="header-details">
                     <div class="header-details-content">
                         <h1>我们的故事</h1>
                         <p>我们成立于2013年</p>
                     </div>
                 </section>
+                <!-- 小标题 end -->
                 <section class="timeline">
+                <!-- 奇数框1 start -->
                     <article class="timeline-event clearfix odd">
                         <figure class="timeline-image">
                             <img width="600" height="600" alt="" src="img/intro-1.jpg"> <a class="popup-image" target="_blank" rel="prettyPhoto" href="img/intro-1-max.jpg" title="查看原图">查看原图</a>
@@ -76,6 +83,8 @@
                             <span class="timeline-marker-line"></span>
                         </span>
                     </article>
+                    <!-- 奇数框1 end -->
+                    <!-- 偶数框2 start -->
                     <article class="timeline-event clearfix even">
                         <figure class="timeline-image">
                             <img width="600" height="600" alt="" src="img/intro-2.jpg"> <a class="popup-image" target="_blank" rel="prettyPhoto" href="img/intro-2-max.jpg" title="查看原图">查看原图</a>
@@ -94,6 +103,8 @@
                             <span class="timeline-marker-line"></span>
                         </span>
                     </article>
+                    <!-- 偶数框2 end -->
+                    <!-- 奇数框3 start -->
                     <article class="timeline-event clearfix odd">
                         <figure class="timeline-image">
                             <img width="600" height="600" alt="" src="img/intro-3.jpg"> <a class="popup-image" target="_blank" rel="prettyPhoto" href="img/intro-3-max.jpg" title="查看原图">查看原图</a>
@@ -113,6 +124,8 @@
                             <span class="timeline-marker-line"></span>
                         </span>
                     </article>
+                    <!-- 奇数框3 end -->
+                    <!-- 偶数框4 start -->
                     <article class="timeline-event clearfix even">
                         <figure class="timeline-image">
                             <img width="600" height="600" alt="" src="img/intro-4.jpg"> <a class="popup-image" target="_blank" rel="prettyPhoto" href="img/intro-4-max.jpg" title="查看原图">查看原图</a>
@@ -132,12 +145,14 @@
                             <span class="timeline-marker-line"></span>
                         </span>
                     </article>
+                    <!-- 偶数框4 end -->
                     <span class="timeline-line">
                         <span class="timeline-marker top"></span>
                         <span class="timeline-marker bottom"></span>
                     </span>
                 </section>
             </div>
+    <!-- footer -->
             <footer class="main-foot clearfix">
                 <div class="content-wrap clearfix">
                     <nav class="block customer-service-nav">
@@ -165,7 +180,7 @@
                         </p>
                     </aside>
                 </div>
-            </footer>
+            </footer><!--end footer-->
         </div>
     </div>
     <script src="js/ef61bd9bea3a5b36856514ee3bad4cfe.js"></script>
@@ -187,11 +202,18 @@
     });
     </script>
     <!--[if IE 6]>
-    <script type="text/javascript" src="js/changeLogoInIE6.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
     <script src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/check-browser.js"></script>
+    <script type="text/javascript" src="js/changeLogoInIE6.js"></script>
+    <script>
+        $(window).load(function() {
+        $(".timeline-image img").each(function() {
+                var maxwidth = 300;
+                if ($(this).width() > maxwidth) {
+                        $(this).width(maxwidth);
+                }
+        });
+    });
+    </script>
     <![endif]-->
 </body>
 

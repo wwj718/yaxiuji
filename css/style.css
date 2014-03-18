@@ -4551,6 +4551,7 @@ div.pp_default .pp_close {
     width:30px;
     height:30px;
     background:rgba(232, 232, 232, 0.92) url('../img/close-cross-icon.png') center center no-repeat;
+    background:rgb(232, 232, 232) url('../img/close-cross-icon-ie.png') center center no-repeat;
     cursor:pointer;
     background-size:50%
 }
@@ -5188,7 +5189,8 @@ section.image-slider.loading .image-gallery-images {
 }
 .third-content img.pyro-image {
     width:auto;
-    max-width:100%
+    _width:100%;
+    max-width:100%；
 }
 .third-content img.pyro-image.alignment-left {
     margin:0 20px 20px 0

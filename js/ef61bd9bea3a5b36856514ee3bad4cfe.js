@@ -8932,82 +8932,10 @@ function apSetupVideoToggle() {
     });
 }
 
-function apSetupAboutPage() {
+function apSetupAboutPage(lei) {
     if (!Modernizr.touch) {
         $('content-wrap').imagesLoaded(function() {
-            $('section.timeline article.timeline-event').each(function() {
-                $(this).waypoint(function(direction) {
-                    if (direction === 'down' && !$(this).hasClass('show')) {
-                        $(this).addClass('show');
-                    }
-                }, {
-                    offset: '70%'
-                });
-            });
-        });
-    }
-    if ($(window).width() > 710) {
-        $('a[rel^="prettyPhoto"]').prettyPhoto({
-            show_title: false,
-            social_tools: '',
-            allow_resize: true,
-            allow_expand: false
-        });
-    }
-}
-
-function apSetupAboutPage2() {
-    if (!Modernizr.touch) {
-        $('content-wrap').imagesLoaded(function() {
-            $('section.shop-products article.shop-product').each(function() {
-                $(this).waypoint(function(direction) {
-                    if (direction === 'down' && !$(this).hasClass('show')) {
-                        $(this).addClass('show');
-                    }
-                }, {
-                    offset: '70%'
-                });
-            });
-        });
-    }
-    if ($(window).width() > 710) {
-        $('a[rel^="prettyPhoto"]').prettyPhoto({
-            show_title: false,
-            social_tools: '',
-            allow_resize: true,
-            allow_expand: false
-        });
-    }
-}
-
-function apSetupAboutPage3() {
-    if (!Modernizr.touch) {
-        $('content-wrap').imagesLoaded(function() {
-            $('footer.main-foot aside.subscribe').each(function() {
-                $(this).waypoint(function(direction) {
-                    if (direction === 'down' && !$(this).hasClass('show')) {
-                        $(this).addClass('show');
-                    }
-                }, {
-                    offset: '70%'
-                });
-            });
-        });
-    }
-    if ($(window).width() > 710) {
-        $('a[rel^="prettyPhoto"]').prettyPhoto({
-            show_title: false,
-            social_tools: '',
-            allow_resize: true,
-            allow_expand: false
-        });
-    }
-}
-
-function apSetupAboutPage4() {
-    if (!Modernizr.touch) {
-        $('content-wrap').imagesLoaded(function() {
-            $('aside.sidebar').each(function() {
+            $(lei).each(function() {
                 $(this).waypoint(function(direction) {
                     if (direction === 'down' && !$(this).hasClass('show')) {
                         $(this).addClass('show');

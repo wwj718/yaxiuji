@@ -218,6 +218,11 @@
             </footer><!--end footer-->
         </div>
     </div>
+    <!--[if lt IE 9]>
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/changeProducts.js"></script>
+    <script src="js/changeLeft2.js"></script>
+    <![endif]-->
     <script src="js/ef61bd9bea3a5b36856514ee3bad4cfe.js"></script>
     <script src="js/9d7456dbd854de352e3c58494f617419.js"></script>
     <script>
@@ -228,12 +233,8 @@
     <!-- 图片弹出 -->
     <script>
     $(window).load(function() {
-        apSetupAboutPage2();
-    });
-    </script>
-    <script>
-    $(window).load(function() {
-        apSetupAboutPage3();
+        apSetupAboutPage('section.shop-products article.shop-product');
+        apSetupAboutPage('footer.main-foot aside.subscribe');
     });
     </script>
     <script>
@@ -248,11 +249,6 @@
         apMobileNavigationSetups();
     });
     </script>
-    <!--[if lt IE 9]>
-    <script src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/changeProducts.js"></script>
-    <script src="js/changeLeft2.js"></script>
-    <![endif]-->
     <!--[if IE 6]>
     <script type="text/javascript" src="js/changeLogoInIE6.js"></script>
     <script>

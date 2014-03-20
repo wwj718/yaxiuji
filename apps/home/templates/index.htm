@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="zn">
+
+<head>
+    <title>雅绣集湘绣有限公司欢迎您</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="/static/css/d.css" rel="stylesheet">
+    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" /><script src="js/html5.js"></script><![endif]-->
+</head>
+
+<body style="overflow:hidden;">
+    <div id="bgimg">
+        <img src="/static/img/shsy.jpg">
+    </div>
+    <div id="logo-wrap">
+        <a href="yaxiuji.htm">
+            <img id="logo" src="/static/img/branch.png">
+            <p>点击进入</p>
+        </a>
+    </div>
+    <script src="/static/js/jquery-1.7.2.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#logo-wrap").animate({
+            height: "toggle",
+            opacity: "toggle"
+        }, 4000);
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        $("body").click(function() {
+            window.location.href = "/yaxiuji"
+        });
+    });
+    </script>
+    <!--[if IE 6 ]>
+    <script type="text/javascript">
+        document.getElementById("logo").src="img/branch-ie6.gif";
+    </script>
+    <![endif]-->
+</body>
+
+</html>

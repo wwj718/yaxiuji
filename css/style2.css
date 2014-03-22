@@ -426,7 +426,7 @@ textarea {
 }
 body {
     margin:0;
-    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family:'微软雅黑';
     font-size:14px;
     line-height:20px;
     color:#333;
@@ -987,7 +987,7 @@ address {
 }
 code, pre {
     padding:0 3px 2px;
-    font-family:Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-family:'微软雅黑';
     font-size:12px;
     color:#333;
     -webkit-border-radius:3px;
@@ -1062,7 +1062,7 @@ label, input, button, select, textarea {
     line-height:20px
 }
 input, button, select, textarea {
-    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family:'微软雅黑';
 }
 label {
     display:block;
@@ -3470,7 +3470,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
     padding:4px 14px;
     margin-bottom:0;
-    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family:'微软雅黑';
     font-size:13px;
     font-weight:normal;
     line-height:1;
@@ -4844,7 +4844,7 @@ div.pp_default .pp_nav {
     position:relative
 }
 div.pp_default .pp_nav .currentTextHolder {
-    font-family:Georgia;
+    font-family:'微软雅黑';
     font-style:italic;
     color:#999;
     font-size:11px;
@@ -5126,7 +5126,7 @@ div.ppt {
 body {
     background:#FFF;
     color:#555052;
-    font-family:"proxima-nova", sans-serif;
+    font-family:'微软雅黑';
     font-size:14px;
     line-height:1.4em
 }
@@ -5532,7 +5532,7 @@ aside.sidebar form.search-form input[type="text"] {
     height:45px;
     width:70%;
     float:left;
-    font-family:"proxima-nova", sans-serif
+    font-family:'微软雅黑';
 }
 aside.sidebar form.search-form input[type="text"]:focus {
     outline:none;
@@ -5551,7 +5551,7 @@ aside.sidebar form.search-form input.search-submit {
     letter-spacing:1px;
     font-weight:600;
     color:#555052;
-    font-family:"proxima-nova", sans-serif;
+    font-family:'微软雅黑';
     font-size:0.9em;
     height:45px;
     padding:0;
@@ -5580,7 +5580,7 @@ input[type="text"], input[type="password"], textarea {
     border:2px #e8e8e8 solid;
     height:45px;
     padding:10px;
-    font-family:"proxima-nova", sans-serif;
+    font-family:'微软雅黑';
     -webkit-appearance:none;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
@@ -5599,7 +5599,7 @@ input[type="submit"], button[type="submit"] {
     color:#FFF;
     clear:both;
     text-transform:uppercase;
-    font-family:"proxima-nova", sans-serif;
+    font-family:'微软雅黑';
     font-size:0.9em;
     letter-spacing:1px;
     font-weight:600;
@@ -6806,7 +6806,7 @@ button.cart-button {
     float:none;
     border:none;
     border-radius:none;
-    font-family:"proxima-nova", sans-serif;
+    font-family:'微软雅黑';
     text-transform:uppercase;
     letter-spacing:2px;
     font-weight:600;
@@ -8752,7 +8752,7 @@ span.page-overlay {
         position:relative;
         float:none;
         left:0;
-        top:-17px
+        top:-40px
     }
     nav.main-nav .nav-wrap {
         position:static;
@@ -8760,7 +8760,7 @@ span.page-overlay {
     }
     nav.main-nav .nav-wrap ul {
         position:relative;
-        top:-58px
+        top:-50px
     }
     nav.main-nav .nav-wrap ul li a {
         margin:0 18px
@@ -9222,10 +9222,10 @@ span.page-overlay {
         margin:0 10px
     }
     nav.main-nav .nav-wrap ul.nav-left {
-        margin-left:65px
+        margin-left:100px
     }
     nav.main-nav .nav-wrap ul.nav-right {
-        margin-right:65px
+        margin-right:100px
     }
     nav.breadcrumbs {
         width:1180px;

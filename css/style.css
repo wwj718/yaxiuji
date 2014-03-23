@@ -28,7 +28,6 @@
     line-height: 50pt;
     font-family:'微软雅黑';
 }
-
 .clearfix {
     *zoom:1
 }
@@ -5524,7 +5523,7 @@ span.pretty-radio.checked {
     position:relative;
     top:2px
 }
-.pagination {
+/*.pagination {
     clear:both
 }
 .pagination ul {
@@ -5591,13 +5590,13 @@ span.pretty-radio.checked {
 }
 .no-backgroundsize .pagination ul li.next a {
     background-image:url('../img/nav-arrow-right-dark-ie.png');
-   _background: url('../img/nav-arrow-right-dark-ie.gif') no-repeat center top;
+    _background: url('../img/nav-arrow-right-dark-ie.gif') no-repeat center top;
 }
 .no-backgroundsize .pagination ul li.prev a {
     background-image:url('../img/nav-arrow-left-dark-ie.png');
     _background: url('../img/nav-arrow-left-dark-ie.gif') no-repeat center top;
-}
-a.logout-button, a.edit-profile {
+}*/
+ a.logout-button, a.edit-profile {
     display:block;
     text-align:center;
     background:#555052;
@@ -7568,7 +7567,7 @@ span.page-overlay {
     opacity:0.5
 }
 @media screen and (min-width: 710px) {
-/*    .content-wrap {
+    /*    .content-wrap {
         padding:0 40px
     }*/
     .content-wrap.inset {
@@ -7821,7 +7820,7 @@ span.page-overlay {
     }
     section.image-slider nav.image-gallery-nav a {
         top:50%;
-/*        _top:350px;*/
+        /*        _top:350px;*/
         width:39px;
         height:74px;
         background:transparent url('../img/nav-arrows.png') no-repeat center center;
@@ -9163,11 +9162,59 @@ ul.ui-selectmenu-menu-popup {
 *+html .ui-state-disabled, *+html .ui-state-disabled a {
     color:silver
 }
-.nav-img{text-align: center;}
-
-
-
-
-
-
-
+.nav-img {
+    text-align: center;
+}
+/*新翻页效果*/
+ .pagination .prev {
+    display: block;
+    float: left;
+    background: url('nav-arrow-left-dark.png') no-repeat scroll center top / 25px auto #e8e8e8;
+    padding: 9px 25px 10px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    text-indent: -99999px;
+    clear: none;
+    cursor: pointer;
+}
+.pagination .prev:hover {
+    background-color: #555052;
+    background-position: center bottom;
+}
+.pagination .next {
+    display: block;
+    float: left;
+    background: url('nav-arrow-right-dark.png') no-repeat scroll center top / 25px auto #e8e8e8;
+    padding: 9px 25px 10px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    text-indent: -9999px;
+    clear: none;
+}
+.pagination .next:hover {
+    background-color: #555052;
+    background-position: center bottom;
+}
+.pagination .page {
+    clear: none;
+    display: block;
+    float: left;
+    background: #e8e8e8;
+    padding: 9px 20px 10px;
+    margin-right: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pagination .page:hover {
+    background-color: #555052;
+    color: #e8e8e8;
+}
+.pagination .disabled {
+    display: none;
+}
+.pagination .current {
+    background-color: #555052;
+    color: #e8e8e8;
+}

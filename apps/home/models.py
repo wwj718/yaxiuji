@@ -7,9 +7,9 @@ from sorl.thumbnail import ImageField
 
 class HomePic(models.Model):
 	'''建一个模型,每次编辑'''
-	name = models.CharField(max_length=40, verbose_name=u'图片名称')
+	name = models.CharField(blank=True,max_length=40, verbose_name=u'图片名称')
 	order = models.IntegerField(default=0, verbose_name=u'图片顺序')
-	pic =  ImageField(blank=True,upload_to='home_img', verbose_name=u'图片')
+	pic =  ImageField(upload_to='home_img', verbose_name=u'图片')
 	create_time = models.DateTimeField(u'创建时间', auto_now_add=True)
 	update_time = models.DateTimeField(u'更新时间', auto_now=True)
 

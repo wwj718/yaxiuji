@@ -16,39 +16,11 @@
 <body>
     <div class="outer-wrap">
         <div class="page-wrap">
-        <!-- header start -->
-            <header role="banner" class="main-head">
-                <div class="nav-img">
-                    <img id="logo" alt="雅绣集" src="/static/img/logo_horizon.png">
-                </div>
-                <span class="nav-open nav-icon hide-text">
-                    <span class="icon">点我打开导航</span>
-                </span>
-                <nav role="navigation" class="main-nav">
-                    <div class="nav-wrap acc">
-                        <ul class="nav-left">
-                            <li class="first"><a href="yaxiuji.htm">首页</a>
-                            </li>
-                            <li><a href="news-first.htm">新闻中心</a>
-                            </li>
-                            <li class="last"><a href="introduction.htm">公司简介</a>
-                            </li>
-                        </ul>
-                        <ul class="nav-right">
-                            <li class="first"><a href="products-classify.htm" title="作品赏析">作品赏析</a>
-                            </li>
-                            <li><a href="contact.htm">联系我们</a>
-                            </li>
-                            <li class="last"><a href="http://yaxiuji.taobao.com/" target="_blank">购物中心</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header><!--end header-->
+        {% include "include/header.html" %}
             <!--小导航start-->
             <nav class="breadcrumbs clearfix">
                 <div class="breadcrumbs-inner">
-                    <a title="Home" href="yaxiuji.htm" class="item">首页</a>
+                    <a title="Home" href="/yaxiuji" class="item">首页</a>
                     <span class="separator"></span>
                     <span class="current">联系我们</span>
                  </div>
@@ -87,12 +59,13 @@
 
                         <form action="/message/" class="contact-form" enctype="multipart/form-data" method="post" accept-charset="utf-8">
                             
-                            <input name="d0ntf1llth1s1n" value=" " class="default-form" style="display:none" type="text">
+                            <!-- <input name="d0ntf1llth1s1n" value=" " class="default-form" style="display:none" type="text"> -->
+
                             <div class="form-row clearfix">
                                 <label for="contact_name">您的姓名
                                     <span class="required">*</span>
                                 </label>
-                                <input name="name" id="contact_name" class="name" type="text">
+                                <input name="name" id="contact_name"  type="text">
                             </div>
                             <div class="form-row clearfix">
                                 <label for="contact_email">您的邮箱
@@ -131,35 +104,7 @@
                 </aside>
                 <!-- 内容右边区域-关注我们 end -->
             </div>
-    <!-- footer -->
-            <footer class="main-foot clearfix">
-                <div class="content-wrap clearfix">
-                    <nav class="block customer-service-nav">
-                        <h1>联系电话</h1>
-                        <ul>
-                            <li class="first"><a href="contact.htm">0731-84712828</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav class="block trade-press-nav">
-                        <h1>门店地址</h1>
-                        <ul>
-                            <li class="first"><a href="contact.htm">湖南省长沙市芙蓉南路新芙蓉家居广场2楼</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <aside class="block subscribe clearfix">
-                        <div class="follow-us clearfix">
-                            <h1>关注我们</h1><a href="/static/img/yaxiuji.png" title="微信" target="_blank" class="social-icon weixin" rel="prettyPhoto">微信</a>  <a href="/static/img/QQ.jpg" target="_blank" title="QQ" class="social-icon QQ" rel="prettyPhoto">QQ</a>
-                        </div>
-                    </aside>
-                    <aside class="credits">
-                        <img id="logo2" alt="雅绣集" src="/static/img/logo_horizon.png">
-                        <p>© 2014 雅绣集 版权所有 / <a href="http://yaxiuji.taobao.com/" title="雅绣集" target="_blank">雅绣集网上商城</a> / power by <a href="mailto:306166485@qq.com">306166485@qq.com</a>
-                        </p>
-                    </aside>
-                </div>
-            </footer><!--end footer-->
+        {% include "include/footer.html" %}
         </div>
     </div>
     <script src="/static/js/ef61bd9bea3a5b36856514ee3bad4cfe.js"></script>

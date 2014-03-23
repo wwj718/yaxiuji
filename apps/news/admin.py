@@ -11,7 +11,7 @@ from .models import News,NewsCategory
     
 class NewsAdmin(admin.ModelAdmin):
     search_fields = ('title',)
-    fields = ('order','category', 'title', 'content_html','content_pic' )
+    fields = ('order','category', 'title', 'content_html','summary')
     list_display = ('order','category', 'title', 'view_times', 'create_time')
     ordering = ('-create_time', )
     #save_on_top = True

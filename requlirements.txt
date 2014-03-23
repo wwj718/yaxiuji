@@ -2,7 +2,7 @@ django>=1.6
 django-admin-bootstrapped
 DjangoUeditor
 #django-crispy-forms>=1.4.0
-Grappelli
+#Grappelli
 #Pillow
 #django-userena
 #easy_thumbnails 

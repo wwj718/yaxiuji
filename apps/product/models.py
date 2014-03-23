@@ -10,7 +10,8 @@ class ProductCategory(models.Model):
 	name = models.CharField(max_length=40, verbose_name=u'分类名称')
 	#order = models.IntegerField(default=0, verbose_name=u'图片顺序')
 	pic =  ImageField(blank=True,upload_to='ProductCategory', verbose_name=u'图片')
-	content = models.CharField(max_length=200, verbose_name=u'内容')
+	content = models.TextField(blank=True, verbose_name=u'内容')
+	#more = models.CharField(max_length=200, verbose_name=u'更多')
 	create_time = models.DateTimeField(u'创建时间', auto_now_add=True)
 	update_time = models.DateTimeField(u'更新时间', auto_now=True)
 
@@ -26,12 +27,12 @@ class ProductCategory(models.Model):
 class Product(models.Model):
 	#使用cycle打出column1,column1,column1
 	'''建一个模型,每次编辑'''
-	name = models.CharField(max_length=40, verbose_name=u'产品名称')
+	name = models.CharField(blank=True,max_length=40, verbose_name=u'产品名称')
 	category = models.ForeignKey(ProductCategory, verbose_name=u'产品类型')
 	#order = models.IntegerField(default=0, verbose_name=u'图片顺序')
-	content = models.CharField(max_length=200, verbose_name=u'内容')
+	content = models.CharField(blank=True,max_length=200, verbose_name=u'介绍')
 	pic =  ImageField(blank=True,upload_to='Product', verbose_name=u'图片')
-	price =  models.IntegerField(blank=True)
+	price =  models.IntegerField(default=0,verbose_name=u'价格')
 	create_time = models.DateTimeField(u'创建时间', auto_now_add=True)
 	update_time = models.DateTimeField(u'更新时间', auto_now=True)
 

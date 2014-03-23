@@ -11,8 +11,8 @@ from sorl.thumbnail import get_thumbnail
 class ProductAdmin(admin.ModelAdmin,AdminImageMixin):
 
     search_fields = ('name',)
-    fields = ('order','name', 'pic')
-    list_display = ('image_thumbnail','order','name', 'pic', 'create_time')
+    fields = ('name',"category", 'pic','price')
+    list_display = ('image_thumbnail','name', 'pic', 'create_time')
     ordering = ('create_time', )
 
     def image_thumbnail(self, obj):
@@ -25,8 +25,8 @@ class ProductAdmin(admin.ModelAdmin,AdminImageMixin):
 class ProductCategoryAdmin(admin.ModelAdmin,AdminImageMixin):
 
     search_fields = ('name',)
-    fields = ('order','name', 'pic')
-    list_display = ('image_thumbnail','order','name', 'pic', 'create_time')
+    fields = ('name', 'pic',"content")
+    list_display = ('image_thumbnail','name', 'pic', 'create_time')
     ordering = ('create_time', )
 
     def image_thumbnail(self, obj):

@@ -3,8 +3,8 @@
 # Create your views here.
 from .models import Message
 from django.http import HttpResponse
-from django.shortcuts import render,redirect
-from forms import MessageForm
+from django.shortcuts import render_to_response,redirect
+#from forms import MessageForm
 
 def hello(request):
     return HttpResponse("Hello message")	
@@ -21,15 +21,17 @@ def hello(request):
 
 
 def message_create(request, template_name='contact.htm'):
-    message_list = Message.objects.all()
+    #message_list = Message.objects.all()
     if request.method == 'POST':
-        form = MessageForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect("")
-    else:
-        form = MessageForm()
-    return render(request, template_name, {
-        'form': form,
-        'message_list': message_list,
-    })
+        name = request.POST.get('name', None)
+        email = request.POST.get('email', None)
+        telephone = request.POST.get('telephone', None)
+        content = request.POST.get('message', None)
+        try:
+            Message.objects.create(name=name,email=email,tel=telephone,content=content)
+            #response = 'success'
+        except:
+            pass
+            #response = 'error'
+        return redirect("/contact")
+    return render_to_response(template_name)

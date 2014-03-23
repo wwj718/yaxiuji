@@ -39,7 +39,7 @@ class News(models.Model):
     #id = models.AutoField(primary_key=True) #不可改
     order = models.IntegerField(default=0, verbose_name=u'新闻顺序')
     category = models.ForeignKey(NewsCategory, verbose_name=u'新闻栏目')
-    title = models.CharField(max_length=100, verbose_name=u'新闻标题')
+    title = models.CharField(blank=True,max_length=100, verbose_name=u'新闻标题')
     summary = models.TextField(blank=True,verbose_name=u'摘要')
     content_html = UEditorField('新闻内容',height=200,width=500,default='test',imagePath='content_img',imageManagerPath="bb",toolbars="mytoolbars",options={"elementPathEnabled":True},filePath='bb',blank=True)
     content_pic = models.CharField(blank=True,max_length=200, verbose_name=u'展示图片')
@@ -57,7 +57,7 @@ class News(models.Model):
     def save(self):
         #取出第一张图片的html，使用正则
         soup = BeautifulSoup(self.content_html) 
-        self.content_pic = str(soup.first("img")) #soup.first("img") #只返回第一个pic,需要转化为str，否则是对象
+        self.content_pic = str(soup.first("img").attrs[0][1]) #soup.first("img") #只返回第一个pic,需要转化为str，否则是对象
         if not self.content_pic : 
             self.content_pic = ''
         super(News, self).save() 

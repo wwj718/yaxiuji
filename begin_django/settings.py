@@ -163,6 +163,7 @@ INSTALLED_APPS = (
     "apps.home",
     "apps.news",
     "apps.message",
+    "apps.product",
 
     'django_admin_bootstrapped',
     #'grappelli',

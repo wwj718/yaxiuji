@@ -18,6 +18,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
 
     #静态页，直达
+    url(r'^$', TemplateView.as_view(template_name="index.htm")),
     url(r'^index/$', TemplateView.as_view(template_name="index.htm")),
     url(r'^introduction/$', TemplateView.as_view(template_name="introduction.htm")),
 
@@ -27,6 +28,9 @@ urlpatterns = patterns('',
     url(r'^yaxiuji/', include("apps.home.urls")),
     url(r'^news/', include("apps.news.urls")),
     url(r'^message/', include("apps.message.urls")),
+    url(r'^products/', include("apps.product.urls")),
+    url(r'^contact/$', include("apps.message.urls")),
+
 
     url(r'^admin/', include(admin.site.urls)),
 

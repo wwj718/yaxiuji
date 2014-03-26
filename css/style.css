@@ -4549,10 +4549,11 @@ div.pp_default .pp_previous:hover {
 }
 div.pp_default .pp_close {
     width:30px;
+    _width:100px;
     height:30px;
     background:rgba(232, 232, 232, 0.92) url('../img/close-cross-icon.png') center center no-repeat;
     background:rgb(232, 232, 232) url('../img/close-cross-icon-ie.png') center center no-repeat;
-    _background:url('../img/close-cross-icon-ie.png') center center no-repeat;
+    _background:url('../img/close-cross-icon-ie.gif') center center no-repeat;
     cursor:pointer;
     background-size:50%
 }

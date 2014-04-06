@@ -64,7 +64,7 @@
                     </h1>
                 <!-- 小标题 end -->
                 <!-- 图片内容区 start -->
-                    <div style="position: relative; height: 900px;" class="shop-items clearfix">
+                    <div style="position: relative; height: 600px;" class="shop-items clearfix">
                     <!-- 图片内容 块start -->
                         <article style="left: 0px; top: 0px;position: absolute;" class="shop-product hover-block item-1">
                             <div class="inner-hover-block">
@@ -247,12 +247,20 @@
         apCenterContent('.content-wrap');
     });
     </script>
+    <!--[if IE 8]>
+    <script>
+    $(document).ready(function() {
+        apCenterContent2('.content-wrap');
+    });
+    </script>
+    <![endif]-->
     <script>
     $(document).ready(function() {
         sbOffCanvasSetup();
         apMobileNavigationSetups();
     });
     </script>
+
     <!--[if IE 6]>
     <script type="text/javascript" src="js/changeLogoInIE6.js"></script>
     <script>
@@ -268,13 +276,6 @@
     <script>
         $(window).load(function() {
         $(".inner-hover-block div").height("200px");
-    });
-    </script>
-    <![endif]-->
-    <!--[if IE 8]>
-    <script>
-    $(document).ready(function() {
-        apCenterContent2('.content-wrap');
     });
     </script>
     <![endif]-->

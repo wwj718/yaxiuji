@@ -8806,13 +8806,13 @@ function apCenterContent2(container) {
             });
             element.closest('.hover-block').imagesLoaded(function() {
                 element.find('>:first-child').css({
-                    'margin-top': (element.height() - innerContHeight) / 3
+                    'margin-top': (element.height() - innerContHeight) / 4
                 });
             });
         });
         $(window).resize(function() {
             waitForFinalEvent(function() {
-                apCenterContent(container);
+                apCenterContent2(container);
             }, 400);
         });
         apHoverBlocks();
@@ -8820,7 +8820,6 @@ function apCenterContent2(container) {
         $(container + ' .hover-block .hover-block-details').find('>:first-child').attr('style', '');
     }
 }
-
 
 function apSetupCheckout() {
     var billingWrap = $('.billing-details-wrap');

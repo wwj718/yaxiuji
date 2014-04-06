@@ -210,12 +210,6 @@
     });
     </script>
     <script>
-    $(document).ready(function() {
-        sbThumbnailGallery('#sbThumbnailGallery');
-        apCenterContent('.content-wrap');
-    });
-    </script>
-    <script>
     $('document').ready(function() {
         sbOffCanvasSetup();
         apMobileNavigationSetups();
@@ -226,6 +220,19 @@
         apSetupAboutPage('footer.main-foot aside.subscribe');
     });
     </script>
+    <script>
+    $(document).ready(function() {
+        sbThumbnailGallery('#sbThumbnailGallery');
+        apCenterContent('.content-wrap');
+    });
+    </script>
+    <!--[if IE 8]>
+    <script>
+    $(document).ready(function() {
+        apCenterContent2('.content-wrap');
+    });
+    </script>
+    <![endif]-->
     <!--[if IE 6]>
     <script type="text/javascript" src="js/changeLogoInIE6.js"></script>
     <script>
@@ -239,14 +246,6 @@
     });
     </script>
     <![endif]-->
-    <!--[if IE 8]>
-    <script>
-    $(document).ready(function() {
-        apCenterContent2('.content-wrap');
-    });
-    </script>
-    <![endif]-->
-
 </body>
 
 </html>

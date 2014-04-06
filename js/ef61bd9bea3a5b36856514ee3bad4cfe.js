@@ -8795,6 +8795,33 @@ function apCenterContent(container) {
     }
 }
 
+function apCenterContent2(container) {
+    if (!Modernizr.touch && $(window).width() >= deskTopWidth) {
+        $(container + ' .hover-block .hover-block-details').each(function() {
+            var element = $(this),
+                innerContHeight = 0;
+            $(this).children(':visible').each(function() {
+                $(this).attr('style', '');
+                innerContHeight = innerContHeight + parseInt($(this).height()) + parseInt($(this).css('margin-top')) + parseInt($(this).css('padding-top')) + parseInt($(this).css('margin-bottom')) + parseInt($(this).css('padding-bottom'))
+            });
+            element.closest('.hover-block').imagesLoaded(function() {
+                element.find('>:first-child').css({
+                    'margin-top': (element.height() - innerContHeight) / 3
+                });
+            });
+        });
+        $(window).resize(function() {
+            waitForFinalEvent(function() {
+                apCenterContent(container);
+            }, 400);
+        });
+        apHoverBlocks();
+    } else {
+        $(container + ' .hover-block .hover-block-details').find('>:first-child').attr('style', '');
+    }
+}
+
+
 function apSetupCheckout() {
     var billingWrap = $('.billing-details-wrap');
     apDuplicateDelivery();

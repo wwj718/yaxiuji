@@ -8709,8 +8709,8 @@ span.page-overlay {
         padding-top:50px;
         padding-left:0;
         padding-right:0;
-        position:fixed;
-        /*position: absolute;*/
+        /*position:fixed;*/
+        position: absolute;
         top:0;
         left:0;
         width:100%;
@@ -8719,8 +8719,8 @@ span.page-overlay {
         z-index:1000;
         -moz-box-sizing:border-box;
         box-sizing:border-box;
-        border-right:17px #e8e8e8 solid;
-        border-left:17px #e8e8e8 solid;
+/*        border-right:17px #e8e8e8 solid;
+        border-left:17px #e8e8e8 solid;*/
         height:170px;
         margin-bottom:0
     }

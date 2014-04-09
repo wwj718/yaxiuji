@@ -19,8 +19,8 @@ WSGI_APPLICATION = 'begin_django.wsgi.application'
 
 #for automatic deployment
 
-DEBUG = True
-TEMPLATE_DEBUG = DEBUG
+DEBUG = False
+TEMPLATE_DEBUG = False
 
 
 ALLOWED_HOSTS = ["*"]

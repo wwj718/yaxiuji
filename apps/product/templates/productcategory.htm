@@ -7,8 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" href="/static/img/yxjxiaologo.png">
+
     <script type="text/javascript" src="/static/js/peu7wgp.js"></script>
-    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" /><script src="js/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="/static/css/ie.css" /><script src="/static/js/html5.js"></script><![endif]-->
     <link href="/static/css/d.css" rel="stylesheet">
     <script src="/static/js/dc.js" async="" type="text/javascript"></script>
 </head>
@@ -35,7 +37,7 @@
                     <div style="position: relative; height: 1785px;" class="shop-items">
                     <!-- 图片分类 块 start -->
                     {% for category in  productcategory_list%}
-                        <article style="position: absolute; left: 0px; top: 0px;" class="shop-category hover-block item-1">
+                        <article style="position: absolute; left: 0px; top: 0px;" class="shop-category hover-block item-1 {% cycle "odd" "even" %}">
                             <div class="inner-hover-block">
                                 <a href="{% url "product_product_list" category.id %}" title="单面秀">
                                     <figure class="shop-category-image">
@@ -52,103 +54,28 @@
                             </div>
                         </article>
                     {% endfor %}
-                        
-                    <!-- 图片分类 块 end -->
-                        <!-- <article style="position: absolute; left:0; top: 0px;" class="shop-category hover-block item-2 even">
-                            <div class="inner-hover-block">
-                                <a href="product1.htm" title="双面绣">
-                                    <figure class="shop-category-image">
-                                        <img alt="" src="/static/
-                                        img/production4.jpg" height="800" width="800">
-                                    </figure>
-                                    <div class="hover-block-details">
-                                        <h1>双面绣</h1>
-                                        <p style="" class="category-description"></p>
-                                        <p style="">All our floor lamps&nbsp;reflect the classic style and supreme functionality of the original Anglepoise® design. With styles ranging from the ‘Giant’ to the ‘Mini’, you’ll find there is an Anglepoise® floor lamp to suit any interior space.&nbsp;</p>
-                                        <p style=""></p>
-                                        <p style="" class="products-link top-line">View Products</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-                        <article style="position: absolute; left: 0px; top: 595px;" class="shop-category hover-block item-3">
-                            <div class="inner-hover-block">
-                                <a href="product1.htm" title="软裱">
-                                    <figure class="shop-category-image">
-                                        <img alt="" src="/static/img/production4.jpg" height="800" width="800">
-                                    </figure>
-                                    <div class="hover-block-details">
-                                        <h1>软裱</h1>
-                                        <p style="" class="category-description"></p>
-                                        <p style="">Our adjustable&nbsp;ceiling lights&nbsp;are focused for task efficiency, whilst our pendant lights disperse light more generally and add visual impact to an interior space. Consider a combination of the two for multi-task spaces.</p>
-                                        <p style=""></p>
-                                        <p style="" class="products-link top-line">View Products</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-                        <article style="position: absolute; left: 0; top: 595px;" class="shop-category hover-block item-4 even">
-                            <div class="inner-hover-block">
-                                <a href="product1.htm" title="小商品">
-                                    <figure class="shop-category-image">
-                                        <img alt="" src="/static/img/production4.jpg" height="800" width="800">
-                                    </figure>
-                                    <div class="hover-block-details">
-                                        <h1>小商品</h1>
-                                        <p style="" class="category-description"></p>
-                                        <p style="">Anglepoise® wall lights will add an extra dimension to any interior scheme. Simply rotate the flexible shade to focus a concentrated beam of light just where it’s needed, or tilt it away to disperse an ambient glow.&nbsp;</p>
-                                        <p style=""></p>
-                                        <p style="" class="products-link top-line">View Products</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-                        <article style="position: absolute; left: 0px; top: 1190px;" class="shop-category hover-block item-5">
-                            <div class="inner-hover-block">
-                                <a href="product1.htm" title="服饰">
-                                    <figure class="shop-category-image">
-                                        <img alt="" src="/static/img/production4.jpg" height="800" width="800">
-                                    </figure>
-                                    <div class="hover-block-details">
-                                        <h1>服饰</h1>
-                                        <p style="" class="category-description"></p>
-                                        <p style="">Limited and special edition products can be found here. Initially we are showing the work of local Street Artist My Dog Sighs.</p>
-                                        <p style=""></p>
-                                        <p style="" class="products-link top-line">View Products</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-                        <article style="position: absolute; left: 0; top: 1190px;" class="shop-category hover-block item-6 even">
-                            <div class="inner-hover-block">
-                                <a href="product1.htm" title="其他">
-                                    <figure class="shop-category-image">
-                                        <img alt="" src="/static/img/production4.jpg" height="800" width="800">
-                                    </figure>
-                                    <div class="hover-block-details">
-                                        <h1>其他</h1>
-                                        <p style="" class="category-description"></p>
-                                        <p style="">Find something a little different from Anglepoise<sup>®</sup>. We have started with some lovely prints from local Artists Russell Squires, Barry and Roo Abrook -&nbsp;more items to come shortly.</p>
-                                        <p style=""></p>
-                                        <p style="" class="products-link top-line">View Products</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </article> -->
 
                     </div>
                 </section>
                 <!-- 图片分类end -->
             </div>
             
-            {% include "include/header.html" %}
+            {% include "include/footer.html" %}
 
         </div>
     </div>
     <!--[if lt IE 9]>
-    <script src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/changeProductsClass.js"></script>
-    <script src="js/changeLeft.js"></script>
+    <script src="/static/js/jquery-1.7.2.min.js"></script>
+    <script src="/static/js/changeProductsClass.js"></script>
+    <script src="/static/js/changeLeft.js"></script>
+    <![endif]-->
+
+    <!--[if IE 8]>
+    <script>
+    $(document).ready(function() {
+        apCenterContent2('.content-wrap');
+    });
+    </script>
     <![endif]-->
     <script src="/static/js/ef61bd9bea3a5b36856514ee3bad4cfe.js"></script>
     <script src="/static/js/9d7456dbd854de352e3c58494f617419.js"></script>
@@ -175,7 +102,7 @@
     });
     </script>
     <!--[if IE 6]>
-    <script type="text/javascript" src="js/changeLogoInIE6.js"></script>
+    <script type="text/javascript" src="/static/js/changeLogoInIE6.js"></script>
     <script>
         $(window).load(function() {
         $(".shop-category-image img").each(function() {

@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <script type="text/javascript" src="/static/js/peu7wgp.js"></script>
     <link href="/static/css/d.css" rel="stylesheet">
-    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" /><script src="js/html5.js"></script><![endif]-->
+    <link rel="shortcut icon" href="/static/img/yxjxiaologo.png">
+
+    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="/static/css/ie.css" /><script src="/static/js/html5.js"></script><![endif]-->
     <script src="js/dc.js" type="text/javascript"></script>
 </head>
 
@@ -173,9 +175,17 @@
         </div>
     </div>
     <!--[if lt IE 9]>
-    <script src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/changeProducts.js"></script>
-    <script src="js/changeLeft2.js"></script>
+    <script src="/static/js/jquery-1.7.2.min.js"></script>
+    <script src="/static/js/changeProducts.js"></script>
+    <script src="/static/js/changeLeft2.js"></script>
+    <![endif]-->
+    
+    <!--[if IE 8]>
+    <script>
+    $(document).ready(function() {
+        apCenterContent2('.content-wrap');
+    });
+    </script>
     <![endif]-->
     <script src="/static/js/ef61bd9bea3a5b36856514ee3bad4cfe.js"></script>
     <script src="/static/js/9d7456dbd854de352e3c58494f617419.js"></script>
@@ -204,7 +214,7 @@
     });
     </script>
     <!--[if IE 6]>
-    <script type="text/javascript" src="js/changeLogoInIE6.js"></script>
+    <script type="text/javascript" src="/static/js/changeLogoInIE6.js"></script>
     <script>
         $(window).load(function() {
         $(".shop-product-image img").each(function() {

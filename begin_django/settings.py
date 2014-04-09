@@ -22,6 +22,9 @@ WSGI_APPLICATION = 'begin_django.wsgi.application'
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+
+ALLOWED_HOSTS = ["*"]
+
 ADMINS = (
     ('wwj', '1162025955@qq.com'),
 )
@@ -79,6 +82,7 @@ MEDIA_URL = '/media/'
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
 STATIC_ROOT = ''
+
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"

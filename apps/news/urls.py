@@ -11,7 +11,7 @@ urlpatterns = patterns('',
     url(r'^%s$' % NEWS_URL, news_news_details, name='news_news_details'),
     url(r'^list$' , news_news_list, name='news_news_list'),
     url(r'^search$' , news_news_search, name='news_news_search'),
-    url(r'^/news/category/(?P<id>\d+)$' , news_by_category, name='news_by_category'),
+    url(r'^category/(?P<id>\d+)$' , news_by_category, name='news_by_category'),
 
 
 )

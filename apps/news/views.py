@@ -52,9 +52,11 @@ def news_by_category(request,id,template_name='news_all.htm'):
     """
     Returns a news detail page.
     """
-    category=get_object_or_404(NewsCategory,id=int(id))
-    news_list = News.objects.filter(category=category)
+    getcategory=get_object_or_404(NewsCategory,id=int(id))
+    category = NewsCategory.objects.all()
+    news_list = News.objects.filter(category=getcategory)
     return render(request, template_name, {
         'news_list': news_list,
         'category':category,
+        "getcategory":getcategory,
     })

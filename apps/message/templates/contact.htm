@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <script type="text/javascript" src="/static/js/peu7wgp.js"></script>
     <link href="/static/css/d.css" rel="stylesheet">
-    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" /><script src="js/html5.js"></script><![endif]-->
+    <link rel="shortcut icon" href="/static/img/yxjxiaologo.png">
+    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="/static/css/ie.css" /><script src="/static/js/html5.js"></script><![endif]-->
     <script src="/static/js/dc.js" async="" type="text/javascript"></script>
 </head>
 
@@ -37,8 +38,8 @@
                                 <span style="line-height: 1.6em;">周一至周五9:00-17:00</span>
                             </p>
                             <h2>联系方式</h2>
-                            <p>电话：0731-84712828
-                                <br>邮箱：<a href="mailto:2485138730@qq.com">2485138730@qq.com</a>
+                            <p>电话：0731-84712828</p>
+                            <p>邮箱：2485138730@qq.com</p>
                         </div>
                         <div class="half-area">
                             <h2>公司地址</h2>
@@ -84,7 +85,7 @@
                                 <textarea name="message" cols="40" rows="10" id="contact_message" class="message"></textarea>
                             </div>
                             <span class="contact-button">
-                                <input name="contact-submit" value="提交" type="submit">
+                                <input name="contact-submit" id="submit" value="提交" type="submit">
                             </span>
                         </form>
                     </section>
@@ -100,6 +101,7 @@
                             <span></span>QQ</a>
                         <a href="/static/img/yaxiuji.png" title="关注我们的微信" target="_blank" class="button-link line-button social weixin" rel="prettyPhoto">
                             <span></span>微信</a>
+                        <a href="http://yaxiuji.taobao.com/" class="button-link line-button" target="_blank">现在购物</a>
                     </section>
                 </aside>
                 <!-- 内容右边区域-关注我们 end -->
@@ -122,6 +124,22 @@
         sbOffCanvasSetup();
         apMobileNavigationSetups();
     });
+    $('document').ready(function() {
+        $("#submit").click(function(event) {
+            var search_str = /^[\w\-\.]+@[\w\-\.]+(\.\w+)+$/;
+            var email_val = $("#contact_email").val();
+            if(search_str.test(email_val)){
+              a=1;
+            }else{
+              alert("不是email");
+              event.preventDefault();
+            }
+            /* Act on the event */
+        });
+            
+    });
+    //www.jbxue.com
+
     </script>
     <script>
     $(window).load(function() {
@@ -130,8 +148,9 @@
     });
     </script>
     <!--[if IE 6]>
-    <script type="text/javascript" src="js/changeLogoInIE6.js"></script>
+    <script type="text/javascript" src="/static/js/changeLogoInIE6.js"></script>
     <![endif]-->
 </body>
 
 </html>
+

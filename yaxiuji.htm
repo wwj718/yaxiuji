@@ -50,8 +50,8 @@
             </header><!--end header-->
             <div class="content-wrap">
             <!-- 图片滚动start -->
-                <section style="" id="sbThumbnailGallery" class="image-slider clearfix">
-                    <div style="opacity: 1;" class="image-gallery-images" id="sbThumbnailGalleryImages">
+                <section style="" id="sbThumbnailGallery" class="image-slider loading clearfix">
+                    <div style="opacity: 0;" class="image-gallery-images" id="sbThumbnailGalleryImages">
                         <figure class="center">
                             <img alt="" src="img/1111.jpg" height="668px" width="1140px">
                         </figure>
@@ -112,7 +112,7 @@
     });
     </script>
     <script>
-    $('document').ready(function() {
+    $(document).ready(function() {
         sbOffCanvasSetup();
         apMobileNavigationSetups();
     });

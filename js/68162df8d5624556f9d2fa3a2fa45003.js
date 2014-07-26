@@ -4,7 +4,7 @@ function sbThumbnailGallery(gallery) {
     var currentImage = 1;
     var animating = false;
     var autoRotate = true;
-    var interval = 8000;
+    var interval = 3000;
     $(gallery + ' #sbThumbnailGalleryImages figure').each(function() {
         imageId = imageId + 1;
         $(this).attr('data-image-id', imageId);

@@ -9046,7 +9046,7 @@ span.page-overlay {
 #sbThumbnailGallery #sbThumbnailGalleryImages figure img {
     width:100%;
     height:auto;
-    zoom:1
+    zoom:1;
 }
 #sbThumbnailGallery #sbThumbnailGalleryImages figure.current {
     position:relative;
@@ -9166,7 +9166,6 @@ ul.ui-selectmenu-menu-popup {
     color:silver
 }
 .nav-img{text-align: center;}
-
 
 
 
